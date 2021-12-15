@@ -15,7 +15,7 @@ $text-color: #14279b;
 .container {
   //margin-right: auto;
   //margin-left: auto;
-  max-width: 1200px; /* or 950px */
+  max-width: 100rem; /* or 950px */
 }
 body {
   font-family: 'SourceSansProRegular', monospace, sans-serif;
@@ -29,11 +29,26 @@ body {
   color: #F17228;
 }
 .header-section {
- //background-color: #002265;
-  // background-image: url("https://th.bing.com/th/id/OIP.nU1JiFLyT8vUk_ltwSRuxAHaEK?w=295&h=180&c=7&r=0&o=5&pid=1.7https://th.bing.com/th/id/OIP.nU1JiFLyT8vUk_ltwSRuxAHaEK?w=295&h=180&c=7&r=0&o=5&pid=1.7");
-  background-image: url("../static/images/Group\ 1\ 1.svg") ;
+  background-image: url("../static/images/Header.svg") ;
   background-repeat: no-repeat;
+  height: 15rem;
   background-size: 100%;
+  margin: auto;
+  .title-order-card
+  {
+    align-self: center;
+    .title-card
+    {
+      h1{
+        color: white;
+        font-weight: bolder;
+      }
+    }
+    .order-card
+    {
+      background-color: white;
+    }
+  }
 }
 .cta{
   margin-top: 20px;
@@ -179,3 +194,47 @@ box-shadow: 0px 5px 10px 0px #FFAE0042;
   
 }
 .text-footer-white { color: #F5F5F5 !important; }
+.search-by-food-section
+{
+  background: #FEFAF1;
+.search-by-food-header
+{
+  .search-by-food-buttons
+  {
+    .search-by-food-View-All
+    {
+      align-self: center;
+      color: #FFB30E;
+      font-weight: bold;
+    }
+    .slider-button
+    {
+      //height: 10px;
+      align-self: center;
+      img{
+        height: 60px;
+      }
+    }
+  }
+}
+.search-by-food-body
+{
+  align-items: center;
+  .search-by-food-item
+  {
+    padding: 10px;
+    .search-by-food-item-img{
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      height: 150px;
+      width: 150px;
+    }
+    .search-by-food-item-txt
+    {
+      margin: 10px;
+      font-weight: bold;
+    }
+  }
+}
+}

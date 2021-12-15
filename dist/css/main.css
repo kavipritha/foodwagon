@@ -8,7 +8,7 @@
 }
 /* set a max-width for horizontal fluid layout and make it centered */
 .container {
-  max-width: 1200px;
+  max-width: 100rem;
   /* or 950px */
 }
 
@@ -26,9 +26,21 @@ body {
 }
 
 .header-section {
-  background-image: url("../static/images/Group 1 1.svg");
+  background-image: url("../static/images/Header.svg");
   background-repeat: no-repeat;
+  height: 15rem;
   background-size: 100%;
+  margin: auto;
+}
+.header-section .title-order-card {
+  align-self: center;
+}
+.header-section .title-order-card .title-card h1 {
+  color: white;
+  font-weight: bolder;
+}
+.header-section .title-order-card .order-card {
+  background-color: white;
 }
 
 .cta {
@@ -153,4 +165,36 @@ body {
 
 .text-footer-white {
   color: #F5F5F5 !important;
+}
+
+.search-by-food-section {
+  background: #FEFAF1;
+}
+.search-by-food-section .search-by-food-header .search-by-food-buttons .search-by-food-View-All {
+  align-self: center;
+  color: #FFB30E;
+  font-weight: bold;
+}
+.search-by-food-section .search-by-food-header .search-by-food-buttons .slider-button {
+  align-self: center;
+}
+.search-by-food-section .search-by-food-header .search-by-food-buttons .slider-button img {
+  height: 60px;
+}
+.search-by-food-section .search-by-food-body {
+  align-items: center;
+}
+.search-by-food-section .search-by-food-body .search-by-food-item {
+  padding: 10px;
+}
+.search-by-food-section .search-by-food-body .search-by-food-item .search-by-food-item-img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height: 150px;
+  width: 150px;
+}
+.search-by-food-section .search-by-food-body .search-by-food-item .search-by-food-item-txt {
+  margin: 10px;
+  font-weight: bold;
 }
