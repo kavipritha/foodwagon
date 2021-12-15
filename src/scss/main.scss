@@ -11,6 +11,12 @@ $text-color: #14279b;
   font-family: 'SourceSansProBold';
   src: url('../static/font/SourceSansPro-Bold.ttf') format('truetype');
 }
+/* set a max-width for horizontal fluid layout and make it centered */
+.container {
+  //margin-right: auto;
+  //margin-left: auto;
+  max-width: 1200px; /* or 950px */
+}
 body {
   font-family: 'SourceSansProRegular', monospace, sans-serif;
   font-weight: 300;
@@ -35,6 +41,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   height: 200px;
+  //justify-content: center;
   .cta-text
   {
     font-weight:900;
@@ -43,6 +50,7 @@ body {
   .cta-button
   {
     color: white;
+    align-self:center;
    // width: 100px;
     background: linear-gradient(93.41deg, #F17228 -5.63%, #F15E28 100.8%);
     /* Button shadow ! */
@@ -56,7 +64,7 @@ body {
   background: linear-gradient(97.86deg, #FFBA26 -8.95%, #FF9A0E 109.24%);
   color: white;
   width: 200px;
-  align-items: center;
+  align-self: center;
 }
 .card-group
 {
