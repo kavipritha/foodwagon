@@ -15,26 +15,54 @@
         <div class="col-12">
             <nav class="navbar">
                 <div class="d-flex">
-                    <div class="p-2">
+                    <div class="d-flex logo">
                         <img src="./static/icons/Logo.svg" title="logo" alt="foodwagon logo" />
                     </div>
-                    <div class="p-2"> Deliver to: <img src="./static/icons/map-marker-alt.svg" title="map marker" alt="map marker icon" /> Current Location Mohammadpur Bus Stand, Dhaka </div>
-                    <div class="p-2">
-                        <img src="./static/icons/Search.svg" title="search" alt="search icon" /> Search Food <a class="login-btn">
-                            <img src="./static/icons/user.svg" title="search" alt="search icon" /> login </a>
+                    <div class="d-flex deliver-to">
+                        <h6 class="text-nowrap bolder">Deliver to:</h6>
+                        <img src="./static/icons/map-marker-alt.svg" title="map marker" alt="map marker icon" />
+                        <h6 class="text-nowrap"> Current Location </h6>
+                        <h6 class="text-nowrap bolder"> Mohammadpur Bus Stand, Dhaka </h6>
+                    </div>
+                    <div class="d-flex search-login">
+                        <a class="d-flex search-btn">
+                            <img src="./static/icons/Search.svg" class="" title="search icon" alt="search icon" /> Search Food </a>
+                        <a class="d-flex login-btn">
+                            <img src="./static/icons/user.svg" title="login icon" alt="login icon" /> Login </a>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
     <div class="row">
-        <header class="col-12 header-section">
-            <div class="col-6 d-flex flex-column align-items-center title-order-card">
-                <div class="title-card">
-                    <h1>Are you starving?</h1>
-                    <p>Within a few clicks, find meals that are accessible near you</p>
+        <header class="col-12 d-flex header-section">
+            <div class="col-6 d-flex flex-column title-order-card">
+                <div class="title-card ">
+                    <h4>Are you starving?</h1>
+                        <p>Within a few clicks, find meals that are accessible near you</p>
                 </div>
-                <div class="col-8 order-card"> Are you starving? </div>
+                <div class="col-8 d-flex flex-column order-card">
+                    <div class="order-card-top">
+                        <a href="#" class="btn delivery-btn">
+                            <img src="./static/icons/IconDelivery.svg" alt="delivery icon" width="35" height="35" />
+                            <span class="hidden-xs hidden-sm">Delivery</span>
+                        </a>
+                        <a href="#" class="btn pickup-btn">
+                            <img src="./static/icons/IconPickup.svg" alt="pick up icon" />
+                            <span class="hidden-xs hidden-sm">Pickup</span>
+                        </a>
+                    </div>
+                    <div class="d-flex order-card-bottom">
+                        <div class="d-flex">
+                            <img src="./static/icons/IconEnterAddress.svg" alt="Enter adderss" />
+                            <input type="text" placeholder="Enter Your Address" class="hidden-xs hidden-sm address-input" />
+                        </div>
+                        <a href="#" class="btn findfood-btn">
+                            <img src="./static/icons/IconFindFoodWhite.svg" alt="Find food" />
+                            <span class="hidden-xs hidden-sm">Find Food</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </header>
     </div>
@@ -44,10 +72,10 @@
             <div class="col-12">
                 <div class="d-flex justify-content-center align-items-cente card-group">
                     <div class="card sale-card">
-                        <img class="card-img-top img-pad" src="./static/images/salefood1.svg" alt="Card image cap">
+                        <img class="card-img-top img-pad" src="./static/images/salefood1.svg" alt="sale food">
                         <div class="d-flex overlay">
                             <h2 class="discount-percent">15</h2>
-                            <img src="./static/images/Percentage Symbol.svg">
+                            <img src="./static/images/Percentage Symbol.svg" alt="percentage">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Greys Vage</h5>
@@ -55,10 +83,10 @@
                         </div>
                     </div>
                     <div class="card ">
-                        <img class="card-img-top img-pad" src="./static/images/salefood2.png" alt="Card image cap">
+                        <img class="card-img-top img-pad" src="./static/images/salefood2.png" alt="sale food">
                         <div class="d-flex overlay">
                             <h2 class="discount-percent">10</h2>
-                            <img src="./static/images/Percentage Symbol.svg">
+                            <img src="./static/images/Percentage Symbol.svg" alt="percentage">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Greys Vage</h5>
@@ -66,10 +94,10 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top img-pad" src="./static/images/salefood3.svg" alt="Card image cap">
+                        <img class="card-img-top img-pad" src="./static/images/salefood3.svg" alt="sale food">
                         <div class="d-flex overlay">
                             <h2 class="discount-percent">25</h2>
-                            <img src="./static/images/Percentage Symbol.svg">
+                            <img src="./static/images/Percentage Symbol.svg" alt="percentage">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title grey">Greys Vage</h5>
@@ -77,10 +105,10 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top img-pad" src="./static/images/salefood4.png" alt="Card image cap">
+                        <img class="card-img-top img-pad" src="./static/images/salefood4.png" alt="sale food">
                         <div class="d-flex overlay">
                             <h2 class="discount-percent">20</h2>
-                            <img src="./static/images/Percentage Symbol.svg">
+                            <img src="./static/images/Percentage Symbol.svg" alt="percentage">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Greys Vage</h5>
@@ -208,44 +236,80 @@
                             <img class="card-img-top img-pad" src="./static/images/salefood1.svg" alt="Card image cap">
                             <div class="d-flex overlay">
                                 <h2 class="discount-percent">15</h2>
-                                <img src="./static/images/Percentage Symbol.svg">
+                                <img src="./static/images/Percentage Symbol.svg" alt="percentage">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Greys Vage</h5>
+                                <div class="d-flex fr-details">
+                                    <img src="./static/images/ImageFoodWorld.svg" alt="">
+                                    <div class="d-flex flex-column fr-rest-rating">
+                                        <h5 class="card-title">Foodworld</h5>
+                                        <div class="d-flex">
+                                            <img src="./static/icons/Iconstar.svg" alt="">
+                                            <h6 class="rating-num">46</h6>
+                                        </div>
+                                    </div>
+                                </div>
                                 <small class="frame77">Opens tomorrow</small>
                             </div>
                         </div>
-                        <div class="card ">
+                        <div class="card sale-card">
                             <img class="card-img-top img-pad" src="./static/images/salefood2.png" alt="Card image cap">
                             <div class="d-flex overlay">
                                 <h2 class="discount-percent">10</h2>
-                                <img src="./static/images/Percentage Symbol.svg">
+                                <img src="./static/images/Percentage Symbol.svg" alt="percentage">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Greys Vage</h5>
+                                <div class="d-flex fr-details">
+                                    <img src="./static/images/ImageFoodWorld.svg" alt="">
+                                    <div class="d-flex flex-column fr-rest-rating">
+                                        <h5 class="card-title">Foodworld</h5>
+                                        <div class="d-flex">
+                                            <img src="./static/icons/Iconstar.svg" alt="">
+                                            <h6 class="rating-num">40</h6>
+                                        </div>
+                                    </div>
+                                </div>
                                 <small class="frame77">Opens tomorrow</small>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card sale-card">
                             <img class="card-img-top img-pad" src="./static/images/salefood3.svg" alt="Card image cap">
                             <div class="d-flex overlay">
                                 <h2 class="discount-percent">25</h2>
-                                <img src="./static/images/Percentage Symbol.svg">
+                                <img src="./static/images/Percentage Symbol.svg" alt="percentage">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title grey">Greys Vage</h5>
-                                <small class="frame78">Open Now</small>
+                                <div class="d-flex fr-details">
+                                    <img src="./static/images/ImagePizzaHub.svg" alt="">
+                                    <div class="d-flex flex-column fr-rest-rating">
+                                        <h5 class="card-title">Pizzahub</h5>
+                                        <div class="d-flex">
+                                            <img src="./static/icons/Iconstar.svg" alt="">
+                                            <h6 class="rating-num">40</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <small class="frame78">Open now</small>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card sale-card">
                             <img class="card-img-top img-pad" src="./static/images/salefood4.png" alt="Card image cap">
                             <div class="d-flex overlay">
                                 <h2 class="discount-percent">20</h2>
-                                <img src="./static/images/Percentage Symbol.svg">
+                                <img src="./static/images/Percentage Symbol.svg" alt="percentage">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Greys Vage</h5>
-                                <small class="frame78">Open Now</small>
+                                <div class="d-flex fr-details">
+                                    <img src="./static/images/ImageDonutsHut.svg" alt="">
+                                    <div class="d-flex flex-column fr-rest-rating">
+                                        <h5 class="card-title">Donuts house</h5>
+                                        <div class="d-flex">
+                                            <img src="./static/icons/Iconstar.svg" alt="">
+                                            <h6 class="rating-num">20</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <small class="frame78">Open now</small>
                             </div>
                         </div>
                     </div>
@@ -254,44 +318,80 @@
                             <img class="card-img-top img-pad" src="./static/images/salefood1.svg" alt="Card image cap">
                             <div class="d-flex overlay">
                                 <h2 class="discount-percent">15</h2>
-                                <img src="./static/images/Percentage Symbol.svg">
+                                <img src="./static/images/Percentage Symbol.svg" alt="percentage">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Greys Vage</h5>
-                                <small class="frame78">Open Now</small>
+                                <div class="d-flex fr-details">
+                                    <img src="./static/images/ImageFoodWorld.svg" alt="">
+                                    <div class="d-flex flex-column fr-rest-rating">
+                                        <h5 class="card-title">Foodworld</h5>
+                                        <div class="d-flex">
+                                            <img src="./static/icons/Iconstar.svg" alt="">
+                                            <h6 class="rating-num">40</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <small class="frame78">Open now</small>
                             </div>
                         </div>
-                        <div class="card ">
+                        <div class="card sale-card">
                             <img class="card-img-top img-pad" src="./static/images/salefood2.png" alt="Card image cap">
                             <div class="d-flex overlay">
                                 <h2 class="discount-percent">10</h2>
-                                <img src="./static/images/Percentage Symbol.svg">
+                                <img src="./static/images/Percentage Symbol.svg" alt="percentage">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Greys Vage</h5>
-                                <small class="frame78">Open Now</small>
+                                <div class="d-flex fr-details">
+                                    <img src="./static/images/ImageFoodWorld.svg" alt="">
+                                    <div class="d-flex flex-column fr-rest-rating">
+                                        <h5 class="card-title">Foodworld</h5>
+                                        <div class="d-flex">
+                                            <img src="./static/icons/Iconstar.svg" alt="">
+                                            <h6 class="rating-num">40</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <small class="frame78">Open now</small>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card sale-card">
                             <img class="card-img-top img-pad" src="./static/images/salefood3.svg" alt="Card image cap">
                             <div class="d-flex overlay">
                                 <h2 class="discount-percent">25</h2>
-                                <img src="./static/images/Percentage Symbol.svg">
+                                <img src="./static/images/Percentage Symbol.svg" alt="percentage">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title grey">Greys Vage</h5>
-                                <small class="frame78">Open Now</small>
+                                <div class="d-flex fr-details">
+                                    <img src="./static/images/ImageFoodWorld.svg" alt="">
+                                    <div class="d-flex flex-column fr-rest-rating">
+                                        <h5 class="card-title">Foodworld</h5>
+                                        <div class="d-flex">
+                                            <img src="./static/icons/Iconstar.svg" alt="">
+                                            <h6 class="rating-num">40</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <small class="frame77">Opens tomorrow</small>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card sale-card">
                             <img class="card-img-top img-pad" src="./static/images/salefood4.png" alt="Card image cap">
                             <div class="d-flex overlay">
                                 <h2 class="discount-percent">20</h2>
-                                <img src="./static/images/Percentage Symbol.svg">
+                                <img src="./static/images/Percentage Symbol.svg" alt="percentage">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Greys Vage</h5>
-                                <small class="frame78">Open Now</small>
+                                <div class="d-flex fr-details">
+                                    <img src="./static/images/ImageFoodWorld.svg" alt="">
+                                    <div class="d-flex flex-column fr-rest-rating">
+                                        <h5 class="card-title">Foodworld</h5>
+                                        <div class="d-flex">
+                                            <img src="./static/icons/Iconstar.svg" alt="">
+                                            <h6 class="rating-num">40</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <small class="frame77">Opens tomorrow</small>
                             </div>
                         </div>
                     </div>
@@ -302,10 +402,10 @@
         </div>
     </div>
     <!-- Search by Food section -->
-    <div class="row">
+    <div class="row search-by-food-section">
         <div class="col-12">
             <div class="container">
-                <section class="d-flex flex-column search-by-food-section">
+                <section class="d-flex flex-column">
                     <div class="d-flex justify-content-between align-items-center search-by-food-header">
                         <h3> Search by Food </h3>
                         <div class="d-flex search-by-food-buttons">
@@ -345,12 +445,64 @@
                     </div>
                 </section>
             </div>
+            <section class="features-section">
+                <img src="./static/images/CardAppFeatures.svg" alt="">
+            </section>
+            <div class="d-flex app-download-section">
+                <img src="./static/images/ImagePhoneImage.svg" alt="">
+                <div class="install-app-card">
+                    <h4>Install the app</h4>
+                    <p>It's never been easier to order food. Look for the finest discounts and you'll be lost in a world of delectable food.</p>
+                    <div class="d-flex align-self-start app-download-btns">
+                        <img src="./static/images/Google Play Download.svg" alt="">
+                        <img src="./static/images/App Store Download Button.svg" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-12 flex-column justify-content-center cta">
+        <div class="col-12">
+            <div class="container">
+                <section class="details-section">
+                    <div class="card details-section-card">
+                        <img src="./static/images/ImageCrispySandwich.svg" class="card-img-top detail-section-img" />
+                        <div class="d-flex flex-column card-body text-center">
+                            <h5 class="card-title card-details-section-title">Best deals <span>Crispy Sandwiches</span></h5>
+                            <p class="card-text"> Enjoy the large size of sandwiches. Complete perfect slice of sandwiches. </p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            <a href="#" class="btn btn-block proceed-to-order-btn"> Proceed to order <img src="./static/icons/ViewAllArrow.svg" title="logo" alt="foodwagon logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card details-section-card">
+                        <img src="./static/images/ImageFriedChicken.svg" class="card-img-top detail-section-img" />
+                        <div class="d-flex flex-column card-body text-center">
+                            <h5 class="card-title card-details-section-title">Celebrate parties with <span>Fried Chicken</span></h5>
+                            <p class="card-text"> Get the best fried chicken smeared with a lip smacking lemon chili flavor. Check out best deals for fried chicken. </p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            <a href="#" class="btn btn-block proceed-to-order-btn"> Proceed to order <img src="./static/icons/ViewAllArrow.svg" title="logo" alt="foodwagon logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card details-section-card">
+                        <img src="./static/images/ImageSpicyPizza.svg" class="card-img-top detail-section-img" />
+                        <div class="d-flex flex-column card-body text-center">
+                            <h5 class="card-title card-details-section-title">Wanna eat hot & spicy <span>Pizza?</span></h5>
+                            <p class="card-text"> Pair up with a friend and enjoy the hot and crispy pizza pops. Try it with the best deals. </p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            <a href="#" class="btn btn-block proceed-to-order-btn"> Proceed to order <img src="./static/icons/ViewAllArrow.svg" title="logo" alt="foodwagon logo" />
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 d-flex flex-column cta">
             <h4 class="text-center text-white text-uppercase"> Are you ready to order with the best deals? </h4>
-            <button type="button" class="btn ">PROCEED TO ORDER</button>
+            <button type="button" class="btn cta-button">PROCEED TO ORDER</button>
         </div>
     </div>
     <div class="row">

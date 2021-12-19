@@ -12,51 +12,156 @@ $text-color: #14279b;
   src: url('../static/font/SourceSansPro-Bold.ttf') format('truetype');
 }
 /* set a max-width for horizontal fluid layout and make it centered */
-.container {
-  //margin-right: auto;
-  //margin-left: auto;
-  max-width: 100rem; /* or 950px */
-}
+// .container {
+//   //margin-right: auto;
+//   //margin-left: auto;
+//  // max-width: 100rem; /* or 950px */
+//  max-width: 80rem;
+// }
 body {
   font-family: 'SourceSansProRegular', monospace, sans-serif;
   font-weight: 300;
+  //max-width: 90rem;
+  //overflow: hidden;
 }
 .navbar {
   justify-content: space-evenly;
+  width: 100%;
+  .deliver-to{
+    //margin: 10px 25px;
+    align-self: center;
+    //padding-top: 5px;
+    text-align: center;
+    width: 500px;
+    h6{
+      margin-right: 10px;
+    }
+    img{
+      margin-right: 10px;
+    }
+    .bolder{
+      font-weight: bold;
+     
+    }
+  }
+  .search-login
+  {
+    margin: 10px 35px;
+    .login-btn
+    {
+      color: #F17228;
+      width: 100px;
+      padding: 10px;
+      text-align: center;
+      img{
+        margin-right: 8px;
+      }
+    }
+    .search-btn{
+      width: 150px;
+      padding: 10px;
+      //margin-right: 10px;
+      img{
+        margin-right: 8px;
+      }
+    }
+  }
+  
 }
-.login-btn
-{
-  color: #F17228;
-}
+
 .header-section {
   background-image: url("../static/images/Header.svg") ;
   background-repeat: no-repeat;
-  height: 15rem;
+  height: 38.75rem;
   background-size: 100%;
   margin: auto;
+  .header-img{
+    height: 5rem;
+    width: 5rem;
+    padding-top: 5.25rem;
+    padding-left: 9.5rem;
+    
+    // position: absolute;
+    // left: 550px;
+    // top: 50px;
+    // z-index: -1;
+  }
   .title-order-card
   {
-    align-self: center;
+    //align-self: left;
+    //align-items: center;
+    justify-content: left;
+    height: 12.1525rem;
+    margin-left: 50px;
+    margin-top: 50px;
+    //width: 600px;
+    //padding-left: 5rem;
+    //smargin: auto;
+    //padding-top: 8rem;
+   //width: 80%;
     .title-card
     {
-      h1{
+      
+      h4{
         color: white;
         font-weight: bolder;
+        font-size: 78px;
       }
     }
     .order-card
     {
-      background-color: white;
+      background: white;
+      border-radius: 8px;
+      height: 50px;
+      padding: 10px;
+      .order-card-top
+      {
+        .delivery-btn
+        {
+          background: #F172281A;
+          margin: 5px;
+          border-radius: 8px;
+         // width: 150px;
+          padding: 5px 12px;
+          span{
+            color: #F17228;
+            text-align: left;
+          }
+          img{
+            vertical-align: middle;
+            display: inline-block;
+          }
+        }
+      }
+      .order-card-bottom
+      {
+        .address-input
+        {
+          width: 300px;
+          border: 0;
+          margin: 5px;
+          background: #F5F5F5;
+
+        }
+        .findfood-btn
+        {
+          background: linear-gradient(95.71deg, #FF7A7A -39.64%, #F75900 135.31%);
+          color: white;
+        }
+      }
     }
   }
 }
 .cta{
-  margin-top: 20px;
+  //margin-top: 20px;
   background-image: url("../static/images/ImageFooter.svg") ;
   background-repeat: no-repeat;
-  background-size: 100%;
-  height: 200px;
+  //background-size: 90%;
+  width: 100%;
+  height: 100%;
+  //height: 18rem;
   //justify-content: center;
+  padding: 8rem 0;
   .cta-text
   {
     font-weight:900;
@@ -69,7 +174,7 @@ body {
    // width: 100px;
     background: linear-gradient(93.41deg, #F17228 -5.63%, #F15E28 100.8%);
     /* Button shadow ! */
-    //width: fit-content;
+    width: fit-content;
     box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
     border-radius: 8px;
   }
@@ -80,6 +185,7 @@ body {
   color: white;
   width: 200px;
   align-self: center;
+  margin: 20px;
 }
 .card-group
 {
@@ -123,6 +229,22 @@ text-align: left;
 }
 .sale-card {
   position: relative;
+  .fr-details{
+    margin-bottom: 20px;
+    .fr-rest-rating{
+      .rating-num{
+        color: #FFB30E;
+
+      }
+      h5{
+        font-weight: bold;
+      }
+    }
+    img{
+      margin: 0 10px;
+    }
+  }
+  
 }
 .overlay {
   position: absolute;
@@ -190,15 +312,29 @@ box-shadow: 0px 5px 10px 0px #FFAE0042;
 
 .custom-footer
 {
-    color: #F5F5F5;;
+    color: #F5F5F5;
+    padding: 50px 10px;
   
 }
 .text-footer-white { color: #F5F5F5 !important; }
 .search-by-food-section
 {
+  margin: 20px 0;
   background: #FEFAF1;
 .search-by-food-header
 {
+  margin: 10px;
+  h3{
+    //styleName: Headline 4 Bold;
+//font-family: Source Sans Pro;
+font-size: 43px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: 0em;
+text-align: center;
+
+  }
   .search-by-food-buttons
   {
     .search-by-food-View-All
@@ -237,4 +373,75 @@ box-shadow: 0px 5px 10px 0px #FFAE0042;
     }
   }
 }
+}
+
+.features-section
+{
+  background: #FEEFD0;
+
+}
+.app-download-section
+{
+  background-image: url("../static/images/App\ DownloadAppDownloadBg.svg") ;
+  background-repeat: no-repeat;
+  height: 36.81rem;
+}
+.details-section
+{
+  .details-section-card{
+    flex-direction: row-reverse;
+    align-items: center;
+    box-shadow: 0px 27px 82px 0px #7C7C7C47;
+    height: 32rem;
+    margin: 80px 0;
+    border-radius: 18px;
+    .card-details-section-title
+    {
+      span{
+        color: orange;
+    }}
+    .detail-section-img{
+      width: 60%;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: calc(0.25rem - 1px);
+    }
+    .proceed-to-order-btn
+    {
+      background: linear-gradient(97.86deg, #FFBA26 -8.95%, #FF9A0E 109.24%);
+      color: white;
+      height: 50px;
+      align-self: center;
+      text-transform: uppercase;
+    }
+  }
+}
+.app-download-section
+{
+  .install-app-card
+  {
+    //margin-top: 50px;
+    align-self: center;
+    
+    h4{
+      //color: linear-gradient(92.84deg, #FFB800 -47.72%, #FF8A00 136.81%);
+      color: #FF8A00;
+//styleName: Headline 2 Bold;
+font-size: 58px;
+font-style: normal;
+font-weight: 700;
+line-height: 72px;
+letter-spacing: 0em;
+text-align: left;
+
+    }
+    p{
+      width: 350px;
+    }
+    .app-download-btns
+    {
+      img{
+        width:150px
+      }
+    }
+  }
 }
