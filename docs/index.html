@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Kavi FoodWagon</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-12">
+            <nav class="navbar">
+                <div class="d-flex">
+                    <div class="d-flex logo">
+                        <img src="./static/icons/Logo.svg" title="logo" alt="foodwagon logo" />
+                    </div>
+                    <div class="d-flex deliver-to">
+                        <h6 class="text-nowrap bolder">Deliver to:</h6>
+                        <img src="./static/icons/map-marker-alt.svg" title="map marker" alt="map marker icon" />
+                        <h6 class="text-nowrap"> Current Location </h6>
+                        <h6 class="text-nowrap bolder"> Mohammadpur Bus Stand, Dhaka </h6>
+                    </div>
+                    <div class="d-flex search-login">
+                        <a class="d-flex search-btn">
+                            <img src="./static/icons/Search.svg" class="" title="search icon" alt="search icon" /> Search Food </a>
+                        <a class="d-flex login-btn">
+                            <img src="./static/icons/user.svg" title="login icon" alt="login icon" /> Login </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <header class="col-12 d-flex header-section">
+            <div class="col-6 d-flex flex-column title-order-card">
+                <div class="title-card ">
+                    <h4>Are you starving?</h1>
+                        <p>Within a few clicks, find meals that are accessible near you</p>
+                </div>
+                <div class="col-10 d-flex flex-column order-card">
+                    <div class="order-card-top">
+                        <a href="#" class="btn delivery-btn">
+                            <img src="./static/icons/IconDelivery.svg" alt="delivery icon" width="35" height="35" />
+                            <span class="hidden-xs hidden-sm">Delivery</span>
+                        </a>
+                        <a href="#" class="btn pickup-btn">
+                            <img src="./static/icons/IconPickup.svg" alt="pick up icon" />
+                            <span class="hidden-xs hidden-sm">Pickup</span>
+                        </a>
+                    </div>
+                    <div class="d-flex order-card-bottom">
+                        <div class="d-flex">
+                            <img src="./static/icons/IconEnterAddress.svg" alt="Enter adderss" />
+                            <input type="text" placeholder="Enter Your Address" class="hidden-xs hidden-sm address-input" />
+                        </div>
+                        <a href="#" class="btn findfood-btn">
+                            <img src="./static/icons/IconFindFoodWhite.svg" alt="Find food" />
+                            <span class="hidden-xs hidden-sm">Find Food</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img src="./static/images/Image HeaderBase.svg" class="header-img" alt="">
+        </header>
+    </div>
+    <div class="container">
+        <!-- Sale Items -->
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-center align-items-cente card-group">
+                    <div class="card sale-card">
+                        <img class="card-img-top img-pad" src="./static/images/salefood1.svg" alt="sale food">
+                        <div class="d-flex overlay">
+                            <h2 class="discount-percent">15</h2>
+                            <img src="./static/images/Percentage Symbol.svg" alt="percentage">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Greys Vage</h5>
+                            <small class="frame77">6 Days Remaining</small>
+                        </div>
+                    </div>
+                    <div class="card ">
+                        <img class="card-img-top img-pad" src="./static/images/salefood2.png" alt="sale food">
+                        <div class="d-flex overlay">
+                            <h2 class="discount-percent">10</h2>
+                            <img src="./static/images/Percentage Symbol.svg" alt="percentage">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Greys Vage</h5>
+                            <small class="frame77">6 Days Remaining</small>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-pad" src="./static/images/salefood3.svg" alt="sale food">
+                        <div class="d-flex overlay">
+                            <h2 class="discount-percent">25</h2>
+                            <img src="./static/images/Percentage Symbol.svg" alt="percentage">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title grey">Greys Vage</h5>
+                            <small class="frame77">7 Days Remaining</small>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-pad" src="./static/images/salefood4.png" alt="sale food">
+                        <div class="d-flex overlay">
+                            <h2 class="discount-percent">20</h2>
+                            <img src="./static/images/Percentage Symbol.svg" alt="percentage">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Greys Vage</h5>
+                            <small class="frame77">8 Days Remaining</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- How does it work -->
+    <div class="row">
+        <div class="col-12">
+            <section class="d-flex flex-column how-does-it-work-section">
+                <h3> How does it work </h3>
+                <div class="container">
+                    <section class="d-flex justify-content-between">
+                        <div class="d-flex flex-column justify-content-center align-items-center contact">
+                            <img src="./static/icons/Map Marker.svg" style="height: 80px; width: auto;" />
+                            <h6>Select location</h6>
+                            <small class="text-muted">Choose the location where your food will be delivered.</small>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-center contact">
+                            <img src="./static/icons/Menu.svg" style="height: 80px; width: auto;" />
+                            <h6>Choose order</h6>
+                            <small class="text-muted">Check over hundreds of menus to pick your favorite food</small>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-center contact">
+                            <img src="./static/icons/Invoice.svg" style="height: 80px; width: auto;" />
+                            <h6>Pay advanced</h6>
+                            <small class="text-muted">It's quick, safe, and simple. Select several methods of payment</small>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-center contact">
+                            <img src="./static/icons/Donut.svg" style="height: 80px; width: auto;" />
+                            <h6>Enjoy meals</h6>
+                            <small class="text-muted">Food is made and delivered directly to your home.</small>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- Popular items -->
+    <div class="row">
+        <div class="col-12">
+            <section class="d-flex flex-column card-section">
+                <h3> Popular items </h3>
+                <div class="d-flex justify-content-center align-items-cente card-group">
+                    <img src="./static/icons/Arrow Left.svg" alt="">
+                    <div class="card">
+                        <img class="card-img-top img-pad" src="./static/images/CheeseBurger.svg" alt="Card image cap">
+                        <div class="card-body food-title">
+                            <h5 class="card-title">Cheese Burger</h5>
+                            <div>
+                                <img src="./static/icons/map-marker-alt.svg" title="map marker" alt="map marker icon" /> Burger Arena
+                            </div>
+                            <h6 class="price">$3.88</h6>
+                            <a href="#" class="btn btn-block ordernowbtn">Order Now</a>
+                        </div>
+                        <!-- <div class="card-footer">
+                  <small class="text-muted">6 Days Remaining</small>
+                </div> -->
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-pad" src="./static/images/Toffecake.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Toffe's Cake</h5>
+                            <div>
+                                <img src="./static/icons/map-marker-alt.svg" title="map marker" alt="map marker icon" /> Top Sticks
+                            </div>
+                            <h6 class="price">$4.00</h6>
+                            <a href="#" class="btn btn-block ordernowbtn">Order Now</a>
+                        </div>
+                        <!-- <div class="card-footer">
+                  <small class="text-muted">6 Days Remaining</small>
+                </div> -->
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-pad" src="./static/images/DanCake.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Dancake</h5>
+                            <div>
+                                <img src="./static/icons/map-marker-alt.svg" title="map marker" alt="map marker icon" /> Cake World
+                            </div>
+                            <h6 class="price">$1.99</h6>
+                            <a href="#" class="btn btn-block ordernowbtn">Order Now</a>
+                        </div>
+                        <!-- <div class="card-footer">
+                  <small class="text-muted">6 Days Remaining</small>
+                </div> -->
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-pad" src="./static/images/CripySandwich.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Crispy Sandwitch</h5>
+                            <div>
+                                <img src="./static/icons/map-marker-alt.svg" title="map marker" alt="map marker icon" /> Fastfood Dine
+                            </div>
+                            <h6 class="price">$3.00</h6>
+                            <a href="#" class="btn btn-block ordernowbtn">Order Now</a>
+                        </div>
+                        <!-- <div class="card-footer">
+                  <small class="text-muted">6 Days Remaining</small>
+                </div> -->
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-pad" src="./static/images/ThaiSoup.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Thai Soup</h5>
+                            <div>
+                                <img src="./static/icons/map-marker-alt.svg" title="map marker" alt="map marker icon" /> Foody man
+                            </div>
+                            <h6 class="price">$2.79</h6>
+                            <a href="#" class="btn btn-block ordernowbtn">Order Now</a>
+                        </div>
+                        <!-- <div class="card-footer">
+                  <small class="text-muted">6 Days Remaining</small>
+                </div> -->
+                    </div>
+                    <img src="./static/icons/Arrow Right.svg" alt="">
+                </div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Featured Restaurants -->
+        <div class="row">
+            <div class="col-12">
+                <section class="d-flex flex-column card-section">
+                    <h3> Featured Restaurants </h3>
+                    <div class="d-flex justify-content-center align-items-cente card-group">
+                        <div class="card sale-card">
+                            <img class="card-img-top img-pad" src="./static/images/salefood1.svg" alt="Card image cap">
+                            <div class="d-flex overlay">
+                                <h2 class="discount-percent">15</h2>
+                                <img src="./static/images/Percentage Symbol.svg" alt="percentage">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex fr-details">
+                                    <img src="./static/images/ImageFoodWorld.svg" alt="">
+                                    <div class="d-flex flex-column fr-rest-rating">
+                                        <h5 class="card-title">Foodworld</h5>
+                                        <div class="d-flex">
+                                            <img src="./static/icons/Iconstar.svg" alt="">
+                                            <h6 class="rating-num">46</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <small class="frame-to-open">Opens tomorrow</small>
+                            </div>
+                        </div>
+                        <div class="card sale-card">
+                            <img class="card-img-top img-pad" src="./static/images/salefood2.png" alt="Card image cap">
+                            <div class="d-flex overlay">
+                                <h2 class="discount-percent">10</h2>
+                                <img src="./static/images/Percentage Symbol.svg" alt="percentage">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex fr-details">
+                                    <img src="./static/images/ImagePizzaHub.svg" alt="">
+                                    <div class="d-flex flex-column fr-rest-rating">
+                                        <h5 class="card-title">Pizzahub</h5>
+                                        <div class="d-flex">
+                                            <img src="./static/icons/Iconstar.svg" alt="">
+                                            <h6 class="rating-num">40</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <small class="frame-to-open">Opens tomorrow</small>
+                            </div>
+                        </div>
+                        <div class="card sale-card">
+                            <img class="card-img-top img-pad" src="./static/images/salefood3.svg" alt="Card image cap">
+                            <div class="d-flex overlay">
+                                <h2 class="discount-percent">25</h2>
+                                <img src="./static/images/Percentage Symbol.svg" alt="percentage">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex fr-details">
+                                    <img src="./static/images/ImageDonutsHut.svg" alt="">
+                                    <div class="d-flex flex-column fr-rest-rating">
+                                        <h5 class="card-title">Donuts house</h5>
+                                        <div class="d-flex">
+                                            <img src="./static/icons/Iconstar.svg" alt="">
+                                            <h6 class="rating-num">40</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <small class="frame-open">Open Now</small>
+                            </div>
+                        </div>
+                        <div class="card sale-card">
+                            <img class="card-img-top img-pad" src="./static/images/salefood4.png" alt="Card image cap">
+                            <div class="d-flex overlay">
+                                <h2 class="discount-percent">20</h2>
+                                <img src="./static/images/Percentage Symbol.svg" alt="percentage">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex fr-details">
+                                    <img src="./static/images/ImageSubway.svg" alt="">
+                                    <div class="d-flex flex-column fr-rest-rating">
+                                        <h5 class="card-title">Donuts house</h5>
+                                        <div class="d-flex">
+                                            <img src="./static/icons/Iconstar.svg" alt="">
+                                            <h6 class="rating-num">50</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <small class="frame-open">Open Now</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-cente card-group">
+                        <div class="card sale-card">
+                            <img class="card-img-top img-pad" src="./static/images/salefood1.svg" alt="Card image cap">
+                            <div class="d-flex overlay">
+                                <h2 class="discount-percent">15</h2>
+                                <img src="./static/images/Percentage Symbol.svg" alt="percentage">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex fr-details">
+                                    <img src="./static/images/ImageRubyTuesday.svg" alt="">
+                                    <div class="d-flex flex-column fr-rest-rating">
+                                        <h5 class="card-title">Ruby Tuesday</h5>
+                                        <div class="d-flex">
+                                            <img src="./static/icons/Iconstar.svg" alt="">
+                                            <h6 class="rating-num">26</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <small class="frame-open">Open Now</small>
+                            </div>
+                        </div>
+                        <div class="card sale-card">
+                            <img class="card-img-top img-pad" src="./static/images/salefood2.png" alt="Card image cap">
+                            <div class="d-flex overlay">
+                                <h2 class="discount-percent">10</h2>
+                                <img src="./static/images/Percentage Symbol.svg" alt="percentage">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex fr-details">
+                                    <img src="./static/images/ImageKFC.svg" alt="">
+                                    <div class="d-flex flex-column fr-rest-rating">
+                                        <h5 class="card-title">Kuakata Fried Chicken</h5>
+                                        <div class="d-flex">
+                                            <img src="./static/icons/Iconstar.svg" alt="">
+                                            <h6 class="rating-num">53</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <small class="frame-open">Open Now</small>
+                            </div>
+                        </div>
+                        <div class="card sale-card">
+                            <img class="card-img-top img-pad" src="./static/images/salefood3.svg" alt="Card image cap">
+                            <div class="d-flex overlay">
+                                <h2 class="discount-percent">25</h2>
+                                <img src="./static/images/Percentage Symbol.svg" alt="percentage">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex fr-details">
+                                    <img src="./static/images/ImageRedSquare.svg" alt="">
+                                    <div class="d-flex flex-column fr-rest-rating">
+                                        <h5 class="card-title">Red Square</h5>
+                                        <div class="d-flex">
+                                            <img src="./static/icons/Iconstar.svg" alt="">
+                                            <h6 class="rating-num">45</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <small class="frame-open">Open Now</small>
+                            </div>
+                        </div>
+                        <div class="card sale-card">
+                            <img class="card-img-top img-pad" src="./static/images/salefood4.png" alt="Card image cap">
+                            <div class="d-flex overlay">
+                                <h2 class="discount-percent">20</h2>
+                                <img src="./static/images/Percentage Symbol.svg" alt="percentage">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex fr-details">
+                                    <img src="./static/images/ImageTacoBell.svg" alt="">
+                                    <div class="d-flex flex-column fr-rest-rating">
+                                        <h5 class="card-title">Taco Bell</h5>
+                                        <div class="d-flex">
+                                            <img src="./static/icons/Iconstar.svg" alt="">
+                                            <h6 class="rating-num">35</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <small class="frame-open">Open Now</small>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-block View-All"> View All <img src="./static/icons/ViewAllArrow.svg" title="logo" alt="foodwagon logo" />
+                    </a>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- Search by Food section -->
+    <div class="row search-by-food-section">
+        <div class="col-12">
+            <div class="container">
+                <section class="d-flex flex-column">
+                    <div class="d-flex justify-content-between align-items-center search-by-food-header">
+                        <h3> Search by Food </h3>
+                        <div class="d-flex search-by-food-buttons">
+                            <a href="#" class="search-by-food-View-All"> View All <img src="./static/icons/IconOrangeRightArrow.svg" title="logo" alt="foodwagon logo" />
+                            </a>
+                            <div class="slider-button">
+                                <img src="./static/icons/Arrow Left.svg" title="logo" alt="foodwagon logo" />
+                                <img src="./static/icons/Arrow Right.svg" title="logo" alt="foodwagon logo" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex search-by-food-body">
+                        <div class="col-2 search-by-food-item">
+                            <img src="./static/images/Pizza.svg" class="rounded-circle search-by-food-item-img" alt="Responsive Circle Image" />
+                            <div class="text-center search-by-food-item-txt"> Pizza </div>
+                        </div>
+                        <div class="col-2  search-by-food-item">
+                            <img src="./static/images/Burger.svg" class="rounded-circle search-by-food-item-img" alt="Responsive Circle Image" />
+                            <div class="text-center search-by-food-item-txt"> Burger </div>
+                        </div>
+                        <div class="col-2 search-by-food-item">
+                            <img src="./static/images/Noodles.svg" class="rounded-circle search-by-food-item-img" alt="Responsive Circle Image" />
+                            <div class="text-center search-by-food-item-txt"> Noodles </div>
+                        </div>
+                        <div class="col-2 search-by-food-item">
+                            <img src="./static/images/Sub-sandwich.svg" class="rounded-circle search-by-food-item-img" alt="Responsive Circle Image" />
+                            <div class="text-center search-by-food-item-txt"> Sub-Sandwich </div>
+                        </div>
+                        <div class="col-2 search-by-food-item">
+                            <img src="./static/images/Chowmein.svg" class="rounded-circle search-by-food-item-img" alt="Responsive Circle Image" />
+                            <div class="text-center search-by-food-item-txt"> Chowmein </div>
+                        </div>
+                        <div class="col-2 search-by-food-item">
+                            <img src="./static/images/Steak.svg" class="rounded-circle search-by-food-item-img" alt="Responsive Circle Image" />
+                            <div class="text-center"> Steak </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="features-section">
+                <img src="./static/images/CardAppFeatures.svg" alt="">
+            </section>
+            <div class="d-flex app-download-section">
+                <img src="./static/images/ImagePhoneImage.svg" alt="">
+                <div class="install-app-card">
+                    <h4>Install the app</h4>
+                    <p>It's never been easier to order food. Look for the finest discounts and you'll be lost in a world of delectable food.</p>
+                    <div class="d-flex align-self-start app-download-btns">
+                        <img src="./static/images/Google Play Download.svg" alt="">
+                        <img src="./static/images/App Store Download Button.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="container">
+                <section class="details-section">
+                    <div class="card details-section-card">
+                        <img src="./static/images/ImageCrispySandwich.svg" class="card-img-top detail-section-img" />
+                        <div class="d-flex flex-column card-body text-center">
+                            <h5 class="card-title card-details-section-title">Best deals <span>Crispy Sandwiches</span></h5>
+                            <p class="card-text"> Enjoy the large size of sandwiches. Complete perfect slice of sandwiches. </p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            <a href="#" class="btn btn-block proceed-to-order-btn"> Proceed to order <img src="./static/icons/ViewAllArrow.svg" title="logo" alt="foodwagon logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card details-section-card">
+                        <img src="./static/images/ImageFriedChicken.svg" class="card-img-top detail-section-img" />
+                        <div class="d-flex flex-column card-body text-center">
+                            <h5 class="card-title card-details-section-title">Celebrate parties with <span>Fried Chicken</span></h5>
+                            <p class="card-text"> Get the best fried chicken smeared with a lip smacking lemon chili flavor. Check out best deals for fried chicken. </p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            <a href="#" class="btn btn-block proceed-to-order-btn"> Proceed to order <img src="./static/icons/ViewAllArrow.svg" title="logo" alt="foodwagon logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card details-section-card">
+                        <img src="./static/images/ImageSpicyPizza.svg" class="card-img-top detail-section-img" />
+                        <div class="d-flex flex-column card-body text-center">
+                            <h5 class="card-title card-details-section-title">Wanna eat hot & spicy <span>Pizza?</span></h5>
+                            <p class="card-text"> Pair up with a friend and enjoy the hot and crispy pizza pops. Try it with the best deals. </p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            <a href="#" class="btn btn-block proceed-to-order-btn"> Proceed to order <img src="./static/icons/ViewAllArrow.svg" title="logo" alt="foodwagon logo" />
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 d-flex flex-column cta">
+            <h4 class="text-center text-white cta-text"> Are you ready to order with the best deals? </h4>
+            <button type="button" class="btn cta-button">PROCEED TO ORDER</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <!-- Footer -->
+            <footer class="bg-dark">
+                <!-- Grid container -->
+                <div class="container">
+                    <!-- Section: Links -->
+                    <section class="custom-footer1">
+                        <h5 class="text-uppercase">Our top cities</h5>
+                        <!--Grid row-->
+                        <div class="row d-flex justify-content-center ">
+                            <!--Grid column-->
+                            <div class="col">
+                                <ul class="list-unstyled mb-0 text-left">
+                                    <li>
+                                        <a href="#!" class="text-footer-white">San Francisco</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="text-footer-white">Miami</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="text-footer-white">San Diego</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="text-footer-white">East Bay</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="text-footer-white">Long Beach</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul class="list-unstyled mb-0 text-left">
+                                    <li>
+                                        <a href="#!" class="text-footer-white">Los Angeles</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="text-footer-white">Washington DC</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="text-footer-white">Seattle</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="text-footer-white">Portland</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="text-footer-white">Nashville</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul class="list-unstyled mb-0 text-left">
+                                    <li>
+                                        <a href="#!" class="text-footer-white">New York City</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="text-footer-white">Orange County</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="text-footer-white">Atlanta</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="text-footer-white">Charlotte</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="text-footer-white">Denver</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul class="list-unstyled mb-0 text-left">
+                                    <li>
+                                        <a href="#!" class="text-footer-white">Chicago</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="text-footer-white">Phoenix</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="text-footer-white">Las Vegas</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="text-footer-white">Sacramento</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="text-footer-white">Oklahoma City</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul class="list-unstyled mb-0 text-left">
+                                    <li>
+                                        <a href="#!" class="text-footer-white">Columbus</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="text-footer-white">New Mexico</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="text-footer-white">Albuquerque</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="text-footer-white">Sacramento</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="text-footer-white">New Orleans</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+                    </section>
+                    <img src="./static/images/HR.svg" alt="">
+                    <!-- Section: Links -->
+                    <div class="d-flex custom-footer2">
+                        <div class="footer-menu">
+                            <div class="row d-flex justify-content-center ">
+                                <!--Grid column-->
+                                <div class="column menu-col">
+                                    <h6 class="text-footer-white menu-header">Company</h6>
+                                    <ul class="list-unstyled mb-0 text-left">
+                                        <li>
+                                            <a href="#!" class="text-footer-white">About us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="text-footer-white">Team</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="text-footer-white">Careers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="text-footer-white">East Bay</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="text-footer-white">Blog</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="column menu-col">
+                                    <h6 class="text-footer-white menu-header">Contact</h6>
+                                    <ul class="list-unstyled mb-0 text-left">
+                                        <li>
+                                            <a href="#!" class="text-footer-white">Help & Support</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="text-footer-white">Partner with us </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="text-footer-white">Ride with us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="column menu-col">
+                                    <h6 class="text-footer-white menu-header">Legal</h6>
+                                    <ul class="list-unstyled mb-0 text-left">
+                                        <li>
+                                            <a href="#!" class="text-footer-white">Terms & Conditions</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="text-footer-white">Refund & Cancellation</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="text-footer-white">Privacy Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="text-footer-white">Cookie Policy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column footer-subscription">
+                            <h6>Follow Us</h6>
+                            <div class="sm-icons">
+                                <img src="./static/icons/1.svg" alt="">
+                                <img src="./static/icons/2.svg" alt="">
+                                <img src="./static/icons/3.svg" alt="">
+                            </div>
+                            <small>Receive exclusive offers in your mailbox</small>
+                            <div class="d-flex subscribe-section">
+                                <img src="./static/icons/envelope.svg" alt="Enter adderss" />
+                                <input type="text" placeholder="Enter Your Email" class="hidden-xs hidden-sm address-input" />
+                                <a href="#" class="btn subscribe-btn">
+                                    <span class="text-white">Subscribe</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./static/images/HR.svg" alt="">
+                    <!-- Copyright -->
+                    <div class="text-left p-3">
+                        <a class="text-white">All rights Reserved © Your Company, 2021</a>
+                    </div>
+                    <!-- Copyright -->
+                </div>
+            </footer>
+            <!-- Footer -->
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+</body>
+
+</html>
